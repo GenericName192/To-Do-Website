@@ -1,0 +1,27 @@
+body {
+  font-size: 18px;
+}
+
+.navbar, .container-fluid {
+  margin-bottom: 40px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  background-color: #164734;
+}
+
+.navbar-brand {
+  margin-left: 20px;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+a{
+    color: white; 
+    margin-left: 4%"
+}
+
+.page-link{
+    color: white;
+    background-color: #164734;
+}
