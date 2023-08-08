@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-g^_df+_cqaga%ol)_u!d&)8yhe9794m6s%7$9j#v*axr#ez#td
 DEBUG = False
 
 ALLOWED_HOSTS = ["davidsamazingwebapp.azurewebsites.net"]
-
+# 
 # Application definition
 
 INSTALLED_APPS = [

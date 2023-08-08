@@ -19,6 +19,7 @@
       ></button>
     </div>
   </div>
+  {% endfor %} {% endif %}
   <form method="POST" action="{% url 'login' %}">
     <!-- send the post request to login -->
     {% csrf_token %}
