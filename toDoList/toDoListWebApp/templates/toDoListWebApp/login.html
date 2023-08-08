@@ -3,23 +3,23 @@
   W-W-W-WHAT?! how did you get here? You're already logged in! Get outta here!
 </h1>
 {% else %}
+<div class="container">
+  <br />
+  {% if messages %} {% for message in messages %}
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{ message }}
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close"
+    ></button>
+  </div>
+</div>
+{% endfor %} {% endif %}
 <div class="col-md-6 offset-md-3">
   <h1>Login</h1>
   <br />
-  <div class="container">
-    <br />
-    {% if messages %} {% for message in messages %}
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      {{ message }}
-      <button
-        type="button"
-        class="btn-close"
-        data-bs-dismiss="alert"
-        aria-label="Close"
-      ></button>
-    </div>
-  </div>
-  {% endfor %} {% endif %}
   <form method="POST" action="{% url 'login' %}">
     <!-- send the post request to login -->
     {% csrf_token %}
